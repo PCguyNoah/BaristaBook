@@ -1,0 +1,19 @@
+body {
+	background-color: #E3EBC8;
+}
+
+h1 {
+	color: white;
+	font-family: verdana;
+	font-size: 300%;
+}
+.centered-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-box {
+	background-color: grey;
+		
+}
