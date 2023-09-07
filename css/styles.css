@@ -1,19 +1,51 @@
-body {
-	background-color: #E3EBC8;
+/* Background image for entire background */
+body
+{
+    background-image: url('images/backgroundCoff.jpg');
+    background-size: cover;
 }
 
-h1 {
-	color: white;
-	font-family: verdana;
-	font-size: 300%;
-}
-.centered-text {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+header {
+    background-color: #251a10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
 }
 
-.login-box {
-	background-color: grey;
-		
+.title {
+    text-align: center;
 }
+
+.title h1 {
+    margin: 0;
+    font-size: 42px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 150;
+}
+
+.user-options a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 22px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+}
+
+/* styles.css */
+.btn {
+    /* Your CSS styles for the button go here */
+    background-color: black;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #42953e;
+}}
