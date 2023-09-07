@@ -60,6 +60,6 @@ function returnWithError($err)
 }
 function returnWithInfo($searchResults)
 {
-	$retValue = '{"results":[' . $searchResults . '],"error":""}';
+	$retValue = '{"results":[' . $searchResults . '],"error":"","userAdded": true}';
 	sendResultInfoAsJson($retValue);
 }
