@@ -1,0 +1,57 @@
+/* Background image for entire background */
+body
+{
+    background-image: url('images/backgroundCoff.jpg');
+    background-size: cover;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: green;
+}
+
+
+/* Form container */
+.form {
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 50px;
+}
+
+/* Button container */
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* styles.css */
+.btn {
+    /* Your CSS styles for the button go here */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+}
+
+.btn:hover {
+  background-color: #42953e;
+}
