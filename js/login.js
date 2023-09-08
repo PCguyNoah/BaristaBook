@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .then(data => {
               // Handle the JSON response data here
+              console.log(JSON.stringify(data));
               resultDiv.innerHTML = "Login successful: " + JSON.stringify(data);
               // You can perform further actions here based on the response
           })
