@@ -1,13 +1,22 @@
+function navigateToLogin() {
+  location.href = 'login.html'; // Navigate to 'login.html'
+}
+
+function navigateToHome() {
+  location.href = 'index.html'; // Navigate to 'login.html'
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
   const resultDiv = document.getElementById("result");
 
   loginForm.addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the form from submitting the traditional way
+      event.preventDefault();
+      
+      // Get user input
       var mydata = "";
       const login = document.getElementById("login").value;
       const password = document.getElementById("password").value;
-
       const apiUrl = "http://baristabook.xyz/LAMPAPI/Login.php";
       const loginData = {
           login: login,
@@ -22,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
           body: JSON.stringify(loginData)
       };
 
+      // Make API request
       fetch(apiUrl, requestOptions)
           .then(response => {
               if (response.ok) {
@@ -31,11 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              // Handle the JSON response data here
+              // Handle the JSON response data
               mydata = JSON.stringify(data);
+
+              // TODO: remove clg statements on prod
               console.log(mydata);
               console.log(data);
 
+              // Check to make sure we didn't get an error message
               if (data.error === "") {
                 console.log("login succesful");
                 resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
@@ -43,11 +56,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("INVALID REQUEST!!");
                 resultDiv.innerHTML = "Invalid user! " + data.error;
               }
-              // You can perform further actions here based on the response
           })
           .catch(error => {
-              console.log("code error");
-              resultDiv.innerHTML = "Error: " + error.message;
+              console.log("Internal Server Error");
+              console.log(data.error);
           });
   });
 });
