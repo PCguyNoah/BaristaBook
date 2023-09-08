@@ -27,7 +27,7 @@ body {
 /* Form container */
 .form {
     width: 375px;
-    height: 400px;
+    height: 475px;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
@@ -87,4 +87,8 @@ body {
 
 .btn1:hover {
   background-color: #42953e;
+}
+
+.input-box {
+  margin-top: 18px;
 }
