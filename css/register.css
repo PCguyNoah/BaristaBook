@@ -1,0 +1,94 @@
+/* Background image for entire background */
+body
+{
+    background-image: url('images/backgroundCoff.jpg');
+    background-size: cover;
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px;
+}
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    color: green;
+}
+
+/* Form container */
+.form {
+    width: 375px;
+    height: 475px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 40px;
+}
+
+/* Button container */
+.button-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* styles.css */
+.btn {
+    /* Your CSS styles for the button go here */
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #42953e;
+}
+
+.btn1 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
+  margin-bottom: 10px;
+  margin-top: 16px;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.btn1:hover {
+  background-color: #42953e;
+}
+
+.input-box {
+  margin-top: 18px;
+}
