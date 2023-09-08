@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   loginForm.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting the traditional way
-
+      const data = "";
       const login = document.getElementById("login").value;
       const password = document.getElementById("password").value;
 
@@ -32,7 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .then(data => {
               // Handle the JSON response data here
-              console.log(JSON.stringify(data));
+              data = JSON.stringify(data);
+              console.log(data.error);
+              console.log(data);
+
+              if (data.error === "") {
+                console.log("login succesful");
+              } else {
+                console.log("INVALID REQUEST!!");
+              }
               resultDiv.innerHTML = "Login successful: " + JSON.stringify(data);
               // You can perform further actions here based on the response
           })
