@@ -42,13 +42,25 @@
             <label for="password">Password:</label>
             <input type="text" id="password" name="password">
       </div>
+
+      <form id="loginForm">
+        <label for="login">Username:</label>
+        <input type="text" id="login" name="login" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="result"></div>
   
       <div class="button-box">
         <button type="button" class="btn2" onclick="clickLoginAgain()" id="loginBtn">Login</button>
       </div>
   
     </div>
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>
