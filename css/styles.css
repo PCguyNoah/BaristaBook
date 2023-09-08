@@ -21,17 +21,16 @@ header {
 .title h1 {
     margin: 0;
     font-size: 42px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 150;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 100;
 }
 
 .user-options a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
     font-size: 22px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 100;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 70;
 }
 
 /* styles.css */
