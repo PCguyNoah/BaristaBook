@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   loginForm.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting the traditional way
-      const mydata = "";
+      var mydata = "";
       const login = document.getElementById("login").value;
       const password = document.getElementById("password").value;
 
@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
               // You can perform further actions here based on the response
           })
           .catch(error => {
+              console.log("code error");
               resultDiv.innerHTML = "Error: " + error.message;
           });
   });
