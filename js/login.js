@@ -38,10 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
               if (data.error === "") {
                 console.log("login succesful");
+                resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
               } else {
                 console.log("INVALID REQUEST!!");
+                resultDiv.innerHTML = "Invalid user! " + data.error;
               }
-              resultDiv.innerHTML = "Login successful: " + JSON.stringify(data);
               // You can perform further actions here based on the response
           })
           .catch(error => {
