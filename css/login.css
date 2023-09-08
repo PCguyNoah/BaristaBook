@@ -8,23 +8,33 @@ body
 /* Global styles */
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color: white;
     color: green;
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px;
 }
 
 
 /* Form container */
 .form {
-    width: 400px;
-    height: 500px;
+    width: 375px;
+    height: 250px;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     position: relative;
-    top: 50px;
+    top: 40px;
 }
 
 /* Button container */
@@ -50,8 +60,76 @@ body {
     cursor: pointer;
     font-family: 'Roboto Mono', monospace;
     font-weight: 100;
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .btn:hover {
   background-color: #42953e;
 }
+
+.btn1 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+  }
+  
+  
+  .btn1:hover {
+    background-color: #42953e;
+  }
+  
+  .btn2 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  
+  .btn2:hover {
+    background-color: #42953e;
+  }
+  
+  .input-box {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+  }
+  
+  .input-box label {
+      width: 100px; /* Adjust the width as needed */
+      text-align: left; /* Align label text to the left */
+      margin-right: 10px; /* Add some spacing between label and input */
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 100;
+      color: black;
+  }
+  
+  .input-box input {
+      flex: 1; /* Allow the input to expand and fill the remaining space */
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
