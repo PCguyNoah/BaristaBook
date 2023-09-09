@@ -14,11 +14,14 @@ location.href = 'register.html';
 }
 
 function contactPage() {
-  // make sure login was successful
+  // make sure login was successful before changing routes
+  console.log(validatedUser);
   if (validatedUser) {
     location.href = 'contactPage.html'; // Navigate to contact page
   }
 }
+
+document.getElementById('secure-sign-on').onclick = contactPage();
 
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
