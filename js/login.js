@@ -11,7 +11,10 @@ location.href = 'register.html';
 }
 
 function contactPage() {
-  location.href = 'contactPage.html'; // Navigate to contact page
+  // make sure login was successful
+  if (this.get('validatedUser')) {
+    location.href = 'contactPage.html'; // Navigate to contact page
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -61,9 +64,11 @@ document.addEventListener("DOMContentLoaded", function () {
               if (data.error === "") {
                 console.log("login succesful");
                 resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
+                validatedUser = true;
               } else {
                 console.log("INVALID REQUEST!!");
                 resultDiv.innerHTML = "Invalid user! " + data.error;
+                validatedUser = false;
               }
           })
           .catch(error => {
