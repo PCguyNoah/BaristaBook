@@ -1,6 +1,9 @@
 function login() {
   location.href = 'login.html'; // Navigate to 'login.html'
 }
+// global variable
+var validatedUser = false;
+
 
 function home() {
   location.href = 'index.html'; // Navigate to 'login.html'
@@ -12,7 +15,7 @@ location.href = 'register.html';
 
 function contactPage() {
   // make sure login was successful
-  if (this.get('validatedUser')) {
+  if (validatedUser) {
     location.href = 'contactPage.html'; // Navigate to contact page
   }
 }
@@ -26,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
       
       // Get user input
       var mydata = "";
-      var validatedUser = false;
       const login = document.getElementById("login").value;
       const password = document.getElementById("password").value;
       const apiUrl = "http://baristabook.xyz/LAMPAPI/Login.php";
