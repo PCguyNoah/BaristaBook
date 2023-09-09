@@ -1,9 +1,17 @@
-function navigateToLogin() {
+function login() {
   location.href = 'login.html'; // Navigate to 'login.html'
 }
 
-function navigateToHome() {
+function home() {
   location.href = 'index.html'; // Navigate to 'login.html'
+}
+
+function register() {
+location.href = 'register.html';
+}
+
+function contactPage() {
+  location.href = 'contactPage.html'; // Navigate to contact page
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       
       // Get user input
       var mydata = "";
+      var validatedUser = false;
       const login = document.getElementById("login").value;
       const password = document.getElementById("password").value;
       const apiUrl = "http://baristabook.xyz/LAMPAPI/Login.php";
