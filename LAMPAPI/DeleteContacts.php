@@ -13,15 +13,10 @@
 		$stmt = $conn->prepare("DELETE from Contacts WHERE ID=?");
 		$stmt->bind_param("s", $id);
 		$stmt->execute();
-		$stmt->close();
-        $stmt = $conn->prepare("SELECT * from Contacts WHERE ID=?");
-		$stmt->bind_param("s", $id);
-		$stmt->execute();
-        $result = $stmt->get_result(); 
-        $stmt->close();  
-        $conn->close();
+		$deletedRows = $stmt->affected_rows;
+		$stmt->close();  
 
-        if ($result !== true && $result->num_rows <= 0)
+        if ($deletedRows > 0)
         {
             $retValue = '{"status":"Success"}';
 		    sendResultInfoAsJson( $retValue );
@@ -31,6 +26,7 @@
             $retValue = '{"status":"Fail"}';
 		    sendResultInfoAsJson( $retValue );
         }      
+		$conn->close();
 	}
 
 	function getRequestInfo()
