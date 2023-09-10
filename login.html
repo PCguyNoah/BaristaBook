@@ -1,21 +1,9 @@
 <html>
 <head>
 	<title>Login or Register</title>
-	<script type="text/javascript" src="js/md5.js"></script>
 	<script type="text/javascript" src="js/code.js"></script>
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
-
-    <script>
-			function navigateToLogin() {
-					location.href = 'login.html'; // Navigate to 'login.html'
-			}
-
-			function navigateToHome() {
-					location.href = 'index.html'; // Navigate to 'login.html'
-			}
-	  </script>
-
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 
@@ -23,32 +11,34 @@
 
   <header>
     <div class="button-box">
-      <button type="button" class="btn1" onclick="navigateToHome();" id="homeButton">HOME</button>
+      <button type="button" class="btn1" onclick="home();" id="homeButton">HOME</button>
     </div>
   </header>
   
     <div class="form" id="wholeForm">
       <div class="button-box">
-        <button type="button" class="btn" onclick="navigateToLogin();" id="loginButton">Login</button>
-        <button type="button" class="btn" onclick="location.href = 'register.html';" id="registerButton">Register</button>
+        <button type="button" class="btn" onclick="login();" id="loginButton">Login</button>
+        <button type="button" class="btn" onclick="register();" id="registerButton">Register</button>
       </div>
-  
-      <div class="input-box">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
-      </div>
-  
-      <div class="input-box">
-            <label for="password">Password:</label>
-            <input type="text" id="password" name="password">
-      </div>
-  
-      <div class="button-box">
-        <button type="button" class="btn2" onclick="clickLoginAgain()" id="loginBtn">Login</button>
-      </div>
-  
-    </div>
+      <form id="loginForm">
+        <div class="input-box">
+          <label for="login">Username:</label>
+            <input tabindex="0" type="text" id="login" name="login" required><br><br>
+        </div>
+          
+        <div class="input-box">
+          <label for="password">Password:</label>
+          <input tabindex="0" type="password" id="password" name="password" required><br><br>
+        </div>
+          
+        <div class="button-box">
+          <button tabindex="0" id="secure-sign-on" type="submit" class="btn2">Sign on</button>
+        </div>
 
+         <div class="error-text" id="result"></div>
+      </form>
+    </div>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
