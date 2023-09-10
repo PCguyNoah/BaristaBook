@@ -21,7 +21,7 @@
         $stmt->close();  
         $conn->close();
 
-        if ($result == 0)
+        if ($result !== true)
         {
             $retValue = '{"status":"Success"}';
 		    sendResultInfoAsJson( $retValue );
@@ -30,9 +30,7 @@
         {
             $retValue = '{"status":"Fail"}';
 		    sendResultInfoAsJson( $retValue );
-        }
-             
-        
+        }      
 	}
 
 	function getRequestInfo()
