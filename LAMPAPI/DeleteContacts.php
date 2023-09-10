@@ -21,7 +21,7 @@
         $stmt->close();  
         $conn->close();
 
-        if ($result !== true)
+        if ($result !== true && $result->num_rows <= 0)
         {
             $retValue = '{"status":"Success"}';
 		    sendResultInfoAsJson( $retValue );
