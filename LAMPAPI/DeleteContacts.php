@@ -10,12 +10,29 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("DELETE from Contacts (ID) VALUES (?)");
+		$stmt = $conn->prepare("DELETE from Contacts WHERE ID=?");
 		$stmt->bind_param("s", $id);
 		$stmt->execute();
 		$stmt->close();
-		$conn->close();
-		returnWithError("");
+        $stmt = $conn->prepare("SELECT * from Contacts WHERE ID=?");
+		$stmt->bind_param("s", $id);
+		$stmt->execute();
+        $result = $stmt->get_result(); 
+        $stmt->close();  
+        $conn->close();
+
+        if ($result == 0)
+        {
+            $retValue = '{"status":"Success"}';
+		    sendResultInfoAsJson( $retValue );
+        }
+        else
+        {
+            $retValue = '{"status":"Fail"}';
+		    sendResultInfoAsJson( $retValue );
+        }
+             
+        
 	}
 
 	function getRequestInfo()
@@ -34,4 +51,9 @@
 		$retValue = '{"error":"' . $err . '"}';
 		sendResultInfoAsJson( $retValue );
 	}	
+
+    function returnResults()
+    {
+        $retValue = '{"Delete Status":"' . $err . '"}';
+    }
 ?>
