@@ -56,8 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
       .then(data => {
-       
-
+        console.log(data);
          // Check to make sure we didn't get an error message
          if (data.error === "") {
           console.log("User registration successful:", data);
@@ -71,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => {
         // Handle errors
         console.error("Error:", error);
-        resultDiv.innerHTML = + data.error;
       });
       registrationForm.reset();
   });

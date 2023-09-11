@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .catch(error => {
               console.log("Internal Server Error");
-              console.log(data.error);
+              console.error("Error:", error);
           });
   });
 });
