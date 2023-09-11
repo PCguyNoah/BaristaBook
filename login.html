@@ -16,8 +16,8 @@
   
     <div class="form" id="wholeForm">
       <div class="button-box">
-        <button aria-label="Login" class="btn" onclick="login();" id="loginButton">Login</button>
-        <button aria-label="Register" class="btn" onclick="register();" id="registerButton">Register</button>
+        <button tabindex="0" aria-label="Login" class="btn" onclick="login();" id="loginButton">Login</button>
+        <button tabindex="0" aria-label="Register" class="btn" onclick="register();" id="registerButton">Register</button>
       </div>
 
       <form id="loginForm">
@@ -32,7 +32,7 @@
         </div>
           
         <div class="button-box">
-          <button tabindex="0" aria-label="Sign on" id="sign-on" class="btn2">Sign on</button>
+          <button tabindex="0" aria-label="Sign on" id="sign-on" type="submit" class="btn2">Sign on</button>
         </div>
 
          <div class="error-text" id="result"></div>

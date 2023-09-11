@@ -1,9 +1,6 @@
 function login() {
   location.href = 'login.html';
 }
-// global variable
-var validatedUser = false;
-
 
 // Transistion to home
 function home() {
