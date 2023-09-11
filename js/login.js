@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
               } else {
                 console.log("INVALID REQUEST!!");
                 resultDiv.innerHTML = "Invalid user! " + data.error;
-                validatedUser = false;
               }
           })
           .catch(error => {
