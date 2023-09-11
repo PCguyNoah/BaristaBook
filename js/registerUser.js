@@ -56,12 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       })
       .then(data => {
-        console.log(data);
          // Check to make sure we didn't get an error message
          if (data.error === "") {
           console.log("User registration successful:", data);
           // Once a user registers, take them back to login page
-          //location.href = 'login.html';
+          location.href = 'login.html';
         } else {
           console.log("INVALID REQUEST!!");
           resultDiv.innerHTML = + data.error;
