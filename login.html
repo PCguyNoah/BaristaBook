@@ -9,18 +9,18 @@
 </head>
 
 <body>
-
   <header>
     <div class="button-box">
-      <button type="button" class="btn1" onclick="home();" id="homeButton">HOME</button>
+      <button class="btn1" onclick="home();" id="homeButton">Home</button>
     </div>
   </header>
   
     <div class="form" id="wholeForm">
       <div class="button-box">
-        <button type="button" class="btn" onclick="login();" id="loginButton">Login</button>
-        <button type="button" class="btn" onclick="register();" id="registerButton">Register</button>
+        <button aria-label="Login" class="btn" onclick="login();" id="loginButton">Login</button>
+        <button aria-label="Register" class="btn" onclick="register();" id="registerButton">Register</button>
       </div>
+
       <form id="loginForm">
         <div class="input-box">
           <label for="login">Username:</label>
@@ -33,7 +33,7 @@
         </div>
           
         <div class="button-box">
-          <button type="submit" class="btn2" onclick="contactPage();">Sign on</button>
+          <button aria-label="Sign on" id="sign-on" class="btn2" onclick="contactPage();">Sign on</button>
         </div>
 
          <div class="error-text" id="result"></div>
@@ -41,5 +41,4 @@
     </div>
     <script src="js/login.js"></script>
 </body>
-
 </html>
