@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
          if (data.error === "") {
           console.log("User registration successful:", data);
           // Once a user registers, take them back to login page
-          location.href = 'login.html';
+          //location.href = 'login.html';
         } else {
           console.log("INVALID REQUEST!!");
           resultDiv.innerHTML = + data.error;
@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch(error => {
         // Handle errors
         console.error("Error:", error);
+        resultDiv.innerHTML = + data.error;
       });
       registrationForm.reset();
   });
