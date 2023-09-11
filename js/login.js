@@ -13,16 +13,6 @@ function register() {
 location.href = 'register.html';
 }
 
-function contactPage() {
-  // make sure login was successful before changing routes
-  console.log(validatedUser);
-  if (validatedUser) {
-    location.href = 'contactPage.html'; // Navigate to contact page
-  }
-}
-
-document.getElementById('secure-sign-on').onclick = contactPage();
-
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
   const resultDiv = document.getElementById("result");
@@ -31,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
       
       // Get user input
-      var mydata = "";
+      var mydata = null;
       const login = document.getElementById("login").value;
       const password = document.getElementById("password").value;
       const apiUrl = "http://baristabook.xyz/LAMPAPI/Login.php";
@@ -58,18 +48,16 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              // Handle the JSON response data
-              mydata = JSON.stringify(data);
-
-              // TODO: remove clg statements on prod
+              // store model
+              mydata = data
               console.log(mydata);
-              console.log(data);
 
               // Check to make sure we didn't get an error message
               if (data.error === "") {
                 console.log("login succesful");
                 resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
-                validatedUser = true;
+                // move to contact page
+                location.href = 'contactPage.html'; 
               } else {
                 console.log("INVALID REQUEST!!");
                 resultDiv.innerHTML = "Invalid user! " + data.error;
