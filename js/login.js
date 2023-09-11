@@ -11,25 +11,6 @@ function register() {
   location.href = 'register.html';
 }
 
-
-(function() {
-  $('form > input').keyup(function() {
-      var empty = false;
-      $('form > input').each(function() {
-          if ($(this).val() == '') {
-              empty = true;
-          }
-      });
-
-      if (empty) {
-          $('#sign-on').attr('disabled', 'disabled');
-      } else {
-          $('#sign-on').removeAttr('disabled');
-      }
-  });
-})()
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
   const resultDiv = document.getElementById("result");
