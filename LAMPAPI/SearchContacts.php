@@ -12,9 +12,9 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("select Name from Contacts where Name like ? and ID=?");
+		$stmt = $conn->prepare("select Name from Contacts where Name like ?");
 		$colorName = "%" . $inData["search"] . "%";
-		$stmt->bind_param("ss", $colorName, $inData["userId"]);
+		$stmt->bind_param("s", $colorName);
 		$stmt->execute();
 		
 		$result = $stmt->get_result();
