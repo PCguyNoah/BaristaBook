@@ -5,6 +5,10 @@
 	$id = 0;
 	$firstName = "";
 	$lastName = "";
+	
+	// New Changes from here to have phone and email returned
+	$phone = 0;
+	$email = "";
 
 	$conn = new mysqli("localhost", "Group17", "Group17POOSD", "COP4331"); 	
 	if( $conn->connect_error )
@@ -13,6 +17,7 @@
 	}
 	else
 	{
+		// Do we include phone and email here?
 		$stmt = $conn->prepare("SELECT ID,FirstName,LastName FROM Users WHERE Login=? AND Password =?");
 		$stmt->bind_param("ss", $inData["login"], $inData["password"]);
 		$stmt->execute();
@@ -20,7 +25,7 @@
 
 		if( $row = $result->fetch_assoc()  )
 		{
-			returnWithInfo( $row['FirstName'], $row['LastName'], $row['ID'] );
+			returnWithInfo( $row['FirstName'], $row['LastName'], $row['ID'], $row['Phone'], $row['Email'] );
 		}
 		else
 		{
@@ -48,9 +53,10 @@
 		sendResultInfoAsJson( $retValue );
 	}
 	
-	function returnWithInfo( $firstName, $lastName, $id )
+	function returnWithInfo( $firstName, $lastName, $id, $phone, $email )
 	{
-		$retValue = '{"id":' . $id . ',"firstName":"' . $firstName . '","lastName":"' . $lastName . '","error":""}';
+		// $retValue = '{"id":' . $id . ',"firstName":"' . $firstName . '","lastName":"' . $lastName . '","error":""}';
+		$retValue = '{"id":' . $id . ',"firstName":"' . $firstName . '","lastName":"' . $lastName . '", "phone":"' . $phone . '", "email":"' . $email .'" "error":""}';
 		sendResultInfoAsJson( $retValue );
 	}
 	
