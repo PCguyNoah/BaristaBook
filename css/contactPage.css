@@ -1,12 +1,14 @@
 /* Background image for entire background */
 .contact-image
 {
-    background-image: url('../images/contactBackground.jpg');
-    background-size: cover;
-
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+  position: relative;
+  background-image: url('../images/contactBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  /* Add the blur effect */
+  background-size: cover;
+  background-position: center;
+  
 }
 .contact-image::before {
   content: '';
@@ -17,7 +19,6 @@
   height: 100%;
   background-image: inherit;
   filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 /* Global styles */
