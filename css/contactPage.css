@@ -1,5 +1,5 @@
 /* Background image for entire background */
-.site-image
+.contact-image
 {
     background-image: url('../images/contactBackground.jpg');
     background-size: cover;
@@ -7,6 +7,17 @@
     /* Add the blur effect */
     filter: blur(8px);
     -webkit-filter: blur(8px);
+}
+.contact-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 /* Global styles */
