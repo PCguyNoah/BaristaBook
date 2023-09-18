@@ -5,19 +5,8 @@ body
   background-image: url('../images/contactBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat; /* Prevent the image from repeating */
-  
+  filter: blur(8px); 
 }
-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: inherit;
-  filter: blur(8px);
-}
-
 header {
     background-color: #251a10;
     color: white;
