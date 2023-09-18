@@ -1,10 +1,13 @@
 /* Background image for entire background */
 .site-image
 {
+    position: relative;
     background-image: url('../images/backgroundCoff.jpg');
     background-size: cover;
     background-repeat: no-repeat; /* Prevent the image from repeating */
     /* Add the blur effect */
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -17,7 +20,6 @@
   height: 100%;
   background-image: inherit;
   filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 /* Global styles */
