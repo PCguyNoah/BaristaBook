@@ -1,7 +1,7 @@
 /* Background image for entire background */
 body
 {
-    background-image: url('../images/backgroundCoff.jpg');
+    background-image: url('../images/contactBackground.jpg');
     background-size: cover;
 }
 
@@ -46,6 +46,8 @@ header {
     font-weight: 350;
     text-align: left;
     margin-top: 0px;
+    background-color: #fff;
+    border-radius: 25px;
 }
 
 /* Home button */
@@ -119,7 +121,8 @@ label[for="search"] {
     width: 600px; /* Set the width of the input field */
     padding: 10px; /* Add padding for better appearance */
     border: 1px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 25px; /* Add rounded corners */
     font-size: 16px; /* Set the font size */
+    font-weight: 600;
   }
   
