@@ -12,56 +12,59 @@
 </head>
 
 <body>
-  <div class="site-image"></div>
-  <header>
-    <div class="button-box">
-      <button type="button" class="btn1" onclick="navigateToHome();" id="homeButton">HOME</button>
-    </div>
-  </header>
+  <div class="site-image">
 
-  <div class="form" id="wholeForm">
-    <div class="button-box">
-      <button type="button" class="btn" onclick="navigateToLogin();" id="loginButton">Login</button>
-      <button type="button" class="btn" onclick="location.href = 'register.html';" id="registerButton">Register</button>
-		</div>
-
-    <form id="registrationForm">
-      <div class="input-box">
-        <label for="firstname">First Name:</label>
-        <input tabindex="0" type="text" id="firstName" name="firstname" required>
-      </div>
   
-      <div class="input-box">
-        <label for="lastname">Last Name:</label>
-        <input tabindex="0" type="text" id="lastName" name="lastname" required>
-      </div>
-
-      <div class="input-box">
-            <label for="username">Username:</label>
-            <input tabindex="0" type="text" id="login" name="username" required>
-      </div>
-
-      <div class="input-box">
-            <label for="password">Password:</label>
-            <input tabindex="0" type="text" id="password" name="password" required>
-      </div>
-
-      <div class="input-box">
-        <label for="email">Email:</label>
-        <input tabindex="0" type="text" id="email" name="email" required>
-      </div>
-
-      <div class="input-box">
-        <label for="phonenumber">Phone Number:</label>
-        <input tabindex="0" type="text" id="phone" name="phonenumber" required>
-      </div>
-
+    <header>
       <div class="button-box">
-        <button tabindex="0" class="btn2" type="submit">Register</button>
+        <button type="button" class="btn1" onclick="navigateToHome();" id="homeButton">HOME</button>
       </div>
-    </form>
+    </header>
 
-    <div class="error-text" id="errorResult"></div>
-  </div>
+    <div class="form" id="wholeForm">
+      <div class="button-box">
+        <button type="button" class="btn" onclick="navigateToLogin();" id="loginButton">Login</button>
+        <button type="button" class="btn" onclick="location.href = 'register.html';" id="registerButton">Register</button>
+      </div>
+
+      <form id="registrationForm">
+        <div class="input-box">
+          <label for="firstname">First Name:</label>
+          <input tabindex="0" type="text" id="firstName" name="firstname" required>
+        </div>
+    
+        <div class="input-box">
+          <label for="lastname">Last Name:</label>
+          <input tabindex="0" type="text" id="lastName" name="lastname" required>
+        </div>
+
+        <div class="input-box">
+              <label for="username">Username:</label>
+              <input tabindex="0" type="text" id="login" name="username" required>
+        </div>
+
+        <div class="input-box">
+              <label for="password">Password:</label>
+              <input tabindex="0" type="text" id="password" name="password" required>
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email:</label>
+          <input tabindex="0" type="text" id="email" name="email" required>
+        </div>
+
+        <div class="input-box">
+          <label for="phonenumber">Phone Number:</label>
+          <input tabindex="0" type="text" id="phone" name="phonenumber" required>
+        </div>
+
+        <div class="button-box">
+          <button tabindex="0" class="btn2" type="submit">Register</button>
+        </div>
+      </form>
+
+      <div class="error-text" id="errorResult"></div>
+    </div>
+</div>
 </body>
 </html>

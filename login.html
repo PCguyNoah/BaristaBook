@@ -9,37 +9,38 @@
 </head>
 
 <body>
-  <div class="site-image"></div>
-  <header>
-    <div class="button-box">
-      <button class="btn1" onclick="home();" id="homeButton">Home</button>
-    </div>
-  </header>
-  
-    <div class="form" id="loginForm">
+  <div class="site-image">
+    <header>
       <div class="button-box">
-        <button tabindex="0" aria-label="Login" class="btn" onclick="login();" id="loginButton">Login</button>
-        <button tabindex="0" aria-label="Register" class="btn" onclick="register();" id="registerButton">Register</button>
+        <button class="btn1" onclick="home();" id="homeButton">Home</button>
       </div>
-
-      <form id="loginForm">
-        <div class="input-box">
-          <label for="login">Username:</label>
-            <input tabindex="0" type="text" id="login" name="login" required><br><br>
-        </div>
-          
-        <div class="input-box">
-          <label for="password">Password:</label>
-          <input tabindex="0" type="password" id="password" name="password" required><br><br>
-        </div>
-          
+    </header>
+    
+      <div class="form" id="loginForm">
         <div class="button-box">
-          <button tabindex="0" aria-label="Sign on" id="sign-on" type="Submit" class="btn2">Sign on</button>
+          <button tabindex="0" aria-label="Login" class="btn" onclick="login();" id="loginButton">Login</button>
+          <button tabindex="0" aria-label="Register" class="btn" onclick="register();" id="registerButton">Register</button>
         </div>
 
-         <div class="error-text" id="result"></div>
-      </form>
-    </div>
-    <script src="js/login.js"></script>
+        <form id="loginForm">
+          <div class="input-box">
+            <label for="login">Username:</label>
+              <input tabindex="0" type="text" id="login" name="login" required><br><br>
+          </div>
+            
+          <div class="input-box">
+            <label for="password">Password:</label>
+            <input tabindex="0" type="password" id="password" name="password" required><br><br>
+          </div>
+            
+          <div class="button-box">
+            <button tabindex="0" aria-label="Sign on" id="sign-on" type="Submit" class="btn2">Sign on</button>
+          </div>
+
+          <div class="error-text" id="result"></div>
+        </form>
+      </div>
+      <script src="js/login.js"></script>
+  </div>
 </body>
 </html>
