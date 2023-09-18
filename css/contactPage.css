@@ -3,6 +3,10 @@ body
 {
     background-image: url('../images/contactBackground.jpg');
     background-size: cover;
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 /* Global styles */
