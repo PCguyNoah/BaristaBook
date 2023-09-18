@@ -1,7 +1,7 @@
 /* Background image for entire background */
 body
 {
-    background-image: url('images/backgroundCoff.jpg');
+    background-image: url('../images/backgroundCoff.jpg');
     background-size: cover;
 }
 
@@ -96,7 +96,7 @@ header {
 }
 
 .user-info {
-  background-color: blue;
+  background-color: white;
   margin-top: 2px;
   color: black;
   padding: 4px 8px;
