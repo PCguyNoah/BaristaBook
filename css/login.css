@@ -1,5 +1,5 @@
 /* Background image for entire background */
-body
+.site-image
 {
     background-image: url('../images/backgroundCoff.jpg');
     background-size: cover;
