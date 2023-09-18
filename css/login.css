@@ -3,6 +3,7 @@
 {
     background-image: url('../images/backgroundCoff.jpg');
     background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     /* Add the blur effect */
     filter: blur(8px);
     -webkit-filter: blur(8px);
@@ -13,12 +14,7 @@ body {
     margin: 0;
     padding: 10px;
     background-color: white;
-    color: green;
-    background-image: url('../images/backgroundCoff.jpg');
-    background-size: cover; /* Adjust to your needs */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-
-    
+    color: green;    
 }
 
 header {
