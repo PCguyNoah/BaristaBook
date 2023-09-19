@@ -29,17 +29,9 @@
 			$searchResults .= '{"id":' . $row["ID"] . ',"name":"' . $row["Name"] .  '", "phone":"' . $row["Phone"] . '", "email":"' . $row["Email"] .'", "error":""}';
 		}
 		
-		if( $searchCount == 0 )
-		{
-			returnWithError( "No Records Found" );
-		}
-		else
-		{
-			returnWithInfo( $searchResults );
-		}
-		
 		$stmt->close();
 		$conn->close();
+		returnWithInfo( $searchResults );
 	}
 
 	function getRequestInfo()
