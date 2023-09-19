@@ -1,0 +1,130 @@
+/* Background image for entire background */
+
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    background-image: url('../images/contactBackground.jpg');
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 48px;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 150;
+    text-align: center;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 32px;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.title h2 {
+    color: black;
+    font-size: 26px;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 0px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+/* Home button */
+.btn1 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addContactBtn {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    border: black;
+    border-style: double;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+#addContactBtn:hover {
+    background-color: #9fd26c;
+}
+
+/* Custom styles for section container */
+.section-container {
+    display: flex;
+    min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+}
+
+/* Custom styles for left and right sections */
+.left-section {
+    flex: 1.25; /* 1/5 of the available space */
+    background-color: transparent; /* Example background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.right-section {
+    flex: 3.75; /* 4/5 of the available space */
+    background-color: #e0e0e0; /* Example background color */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.user-info {
+  background-color: white;
+  margin-top: 2px;
+  color: black;
+  padding: 4px 8px;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 200;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+label[for="search"] {
+    /* Your styles here */
+    font-weight: bold; /* Example: Make the label text bold */
+    color: black; /* Example: Change the label text color */
+    /* Add other styles as needed */
+    font-size: 16px;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  }
+
+  #search {
+    width: 600px; /* Set the width of the input field */
+    padding: 10px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 25px; /* Add rounded corners */
+    font-size: 16px; /* Set the font size */
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
