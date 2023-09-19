@@ -3,6 +3,7 @@
 	<title>My Contacts</title>
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
+    <link href="css/contactPage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 
@@ -10,11 +11,44 @@
 
   <header>
     <div class="button-box">
-      <button type="button" class="btn1" onclick="login();" id="homeButton">Log out</button>
+      <button type="button" class="btn1" onclick="home();" id="homeButton">HOME</button>
+    </div>
+    <!--Need to update name with users name-->
+    <div class="title">
+      <h1>Welcome Back, John!</h1>
     </div>
   </header>
-    <p>This is a sample page where you can search for new users!</p>
-    <script src="js/login.js"></script>
+
+    <!--Need to update with user info-->
+    <div class="section-container">
+      <div class="left-section">
+        <div class="title">
+          <h2>My Information:</h2>
+        </div>
+        <div class="user-info">
+          <p>Name: John Doe</p>
+          <p>Phone: 407-407-4070</p>
+          <p>E-mail: johndoe@aol.com</p>
+        </div>
+
+        <!--Need to create addContacts in js-->
+        <div class="button-box">
+          <button type="button" class="btn" onclick="addContacts();" id="addContactBtn">Add Contacts</button>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="header">
+          <h3>My Contacts</h3>
+            <form action="search.php" method="get"> <!-- Replace "search.php" with your search handling script -->
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="q" placeholder="Search...">
+              </form>
+        </div>
+      </div>
+    </div>
+
+  <script src="js/login.js"></script>
 </body>
 
 </html>

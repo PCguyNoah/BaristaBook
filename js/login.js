@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
               if (data.error === "") {
                 console.log("login succesful");
                 resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
-                sessionStorage.setItem('UserID','bob');
+                sessionStorage.setItem('UserID',login);
                 // move to contact page
                 location.href = 'contactPage.html'; 
               } else {
