@@ -1,12 +1,15 @@
+
 /* Global styles */
 body {
+    position: relative;
+    background-image: url('../images/backgroundCoff.jpg');
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     margin: 0;
     padding: 10px;
     background-color: white;
-    color: green;
-    background-image: url('../images/backgroundCoff.jpg');
-    background-size: cover; /* Adjust to your needs */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: green;    
 }
 
 header {
@@ -17,6 +20,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 52px;
+}
+
+label {
+  font-size: 18px;
 }
 
 
@@ -44,7 +51,7 @@ header {
     width: 50%;
 }
 
-/* styles.css */
+/* Login / Register Buttons */
 .btn {
     /* Your CSS styles for the button go here */
     background-color: black;
@@ -55,15 +62,16 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 100;
+    font-weight: 150;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .btn:hover {
   background-color: #42953e;
 }
 
+/* Home Button */
 .btn1 {
     background-color: black;
     color: white;
@@ -73,10 +81,10 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 100;
+    font-weight: 200;
     margin-bottom: 10px;
     margin-top: 16px;
-    font-size: 30px;
+    font-size: 28px;
     position: absolute;
     top: 10px;
     left: 30px;
@@ -86,7 +94,8 @@ header {
   .btn1:hover {
     background-color: #42953e;
   }
-  
+
+  /* Sign on button */
   .btn2 {
     background-color: black;
     color: white;
@@ -96,10 +105,10 @@ header {
     border-radius: 5px;
     cursor: pointer;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 100;
+    font-weight: 150;
     margin-bottom: 10px;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .btn2:hover {
