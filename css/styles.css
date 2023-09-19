@@ -1,22 +1,11 @@
-
-.container {
+/* Background image for entire background */
+body
+{
   position: relative;
-  width: 100%;
-  height: 100vh; /* Adjust this as needed */
   background-image: url('../images/contactBackground.jpg');
   background-size: cover;
-  background-position: center;
-}
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 
-.container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: inherit;
-  filter: blur(10px); /* Adjust the blur amount as needed */
 }
 header {
     background-color: #251a10;

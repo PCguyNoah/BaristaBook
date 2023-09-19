@@ -6,6 +6,10 @@ body {
     margin: 0;
     padding: 10px;
     background-color: white;
+    position: relative;
+    background-image: url('../images/contactBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 header {
