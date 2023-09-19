@@ -24,6 +24,10 @@ body {
     color: green;
 }
 
+label {
+  font-size: 18px;
+}
+
 /* Form container */
 .form {
     width: 375px;
@@ -49,6 +53,7 @@ body {
 }
 
 /* styles.css */
+/* Login and Register buttons*/
 .btn {
     /* Your CSS styles for the button go here */
     background-color: black;
@@ -58,15 +63,17 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 100;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 150;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .btn:hover {
   background-color: #42953e;
 }
 
+/* Home button */
 .btn1 {
   background-color: black;
   color: white;
@@ -75,14 +82,30 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 100;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: 200;
   margin-bottom: 10px;
   margin-top: 16px;
-  font-size: 30px;
+  font-size: 28px;
   position: absolute;
   top: 10px;
   left: 30px;
+}
+
+/* Final REGISTER button */
+.btn2 {
+  /* Your CSS styles for the button go here */
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: 150;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .btn1:hover {
