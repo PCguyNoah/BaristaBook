@@ -1,11 +1,10 @@
 /* Background image for entire background */
-body
-{
+.bg-image {
   position: relative;
-  
-  
+  background-image: url('../images/contactBackground.jpg');
+  background-size: cover;
   background-repeat: no-repeat; /* Prevent the image from repeating */
-  filter: blur(8px); 
+  filter: blur(8px);
 }
 header {
     background-color: #251a10;
@@ -14,19 +13,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-}
-
-.bg-image {
-  background-image: url('../images/contactBackground.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-    /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
 .title {
