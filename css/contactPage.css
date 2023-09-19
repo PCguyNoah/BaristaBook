@@ -1,15 +1,16 @@
 /* Background image for entire background */
-body
-{
-    background-image: url('../images/backgroundCoff.jpg');
-    background-size: cover;
-}
+
 
 /* Global styles */
 body {
     margin: 0;
     padding: 10px;
     background-color: white;
+    position: relative;
+    background-image: url('../images/contactBackground.jpg');
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 header {
@@ -43,9 +44,11 @@ header {
     color: black;
     font-size: 26px;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 350;
-    text-align: left;
+    font-weight: 200;
+    text-align: center;
     margin-top: 0px;
+    background-color: #fff;
+    border-radius: 25px;
 }
 
 /* Home button */
@@ -73,7 +76,7 @@ header {
 }
 
 #addContactBtn:hover {
-    background-color: green;
+    background-color: #9fd26c;
 }
 
 /* Custom styles for section container */
@@ -119,7 +122,9 @@ label[for="search"] {
     width: 600px; /* Set the width of the input field */
     padding: 10px; /* Add padding for better appearance */
     border: 1px solid #ccc; /* Add a border */
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 25px; /* Add rounded corners */
     font-size: 16px; /* Set the font size */
+    font-weight: 600;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
