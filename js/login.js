@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const apiUrl = "http://baristabook.xyz/LAMPAPI/Login.php";
       const loginData = {
           login: login,
-          password: password
+          password: password,
       };
 
       const requestOptions = {
@@ -46,6 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
+              // create user model
+              const userModel = {
+                id: data.id,
+                firstName: data.firstName,
+                lastName: data.lastName,
+                phone: data.phone,
+                email: data.email
+              }
+              console.log(userModel);
               // store model
               mydata = data
               console.log(mydata);
@@ -61,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("INVALID REQUEST!!");
                 resultDiv.innerHTML = "Invalid user! " + data.error;
               }
+              
           })
           .catch(error => {
               console.log("Internal Server Error");
@@ -68,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
           });
   });
 });
-
+export default userModel;
 
 
 

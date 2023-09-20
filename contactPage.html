@@ -34,7 +34,7 @@
 
           <!--Need to create addContacts in js-->
           <div class="button-box">
-            <button type="button" class="btn" onclick="addContacts();" id="addContactBtn">Add Contacts</button>
+            <button type="button" class="btn" onclick="addContacts();" id="myBtn">Add Contacts</button>
           </div>
         </div>
 
@@ -44,14 +44,68 @@
               <form action="search.php" method="get"> <!-- Replace "search.php" with your search handling script -->
                   <input type="text" id="search" name="q" placeholder="Search...">
               </form>
-              <div>
 
+              <form id="addContactForm">
+                <div class="input-box">
+                  <label for="firstname">Name:</label>
+                  <input tabindex="0" type="text" id="name" name="firstname" required>
+                </div>
+        
+                <div class="input-box">
+                  <label for="email">Email:</label>
+                  <input tabindex="0" type="text" id="email" name="email" required>
+                </div>
+        
+                <div class="input-box">
+                  <label for="phonenumber">Phone Number:</label>
+                  <input tabindex="0" type="text" id="phone" name="phonenumber" required>
+                </div>
+              </form>
+
+              <div class="button-box">
+                <button tabindex="0" class="btn2" type="submit">submit</button>
+              </div>
+              <div class="error-text" id="result-contact"></div>
+              <div>
               </div>
           </div>
+
+          <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>555-123-4567</td>
+                    <td>johndoe@example.com</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jamison Smithsonion</td>
+                    <td>555-987-6543</td>
+                    <td>janesmith@example.com</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+      
         </div>
       </div>
-
     <script src="js/login.js"></script>
+    <script src="js/addContact.js"></script>
 </body>
 
 </html>

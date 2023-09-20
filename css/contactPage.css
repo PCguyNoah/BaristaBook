@@ -127,4 +127,45 @@ label[for="search"] {
     font-weight: 600;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  /* USER CONTACT FORMATTING */
+
+  /* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style table headers */
+  th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style table data rows */
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  
+  /* Style the action buttons */
+  button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  /* Style the action buttons on hover */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* You can add more specific styles or adjust these as needed */
+  
   
