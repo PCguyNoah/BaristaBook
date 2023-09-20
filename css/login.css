@@ -69,6 +69,7 @@ label {
 
 .btn:hover {
   background-color: #42953e;
+  transition: background-color 0.3s;
 }
 
 /* Home Button */
@@ -93,6 +94,7 @@ label {
   
   .btn1:hover {
     background-color: #42953e;
+    transition: background-color 0.3s;
   }
 
   /* Sign on button */
@@ -113,6 +115,7 @@ label {
   
   .btn2:hover {
     background-color: #42953e;
+    transition: background-color 0.3s;
   }
   
   .input-box {

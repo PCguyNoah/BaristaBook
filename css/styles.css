@@ -51,6 +51,7 @@ header {
 
 .btn:hover {
   background-color: #42953e;
+  transition: background-color 0.3s;
 }
 
 .message-container{

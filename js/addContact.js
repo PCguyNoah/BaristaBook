@@ -80,3 +80,26 @@ document.addEventListener("DOMContentLoaded", function () {
       addContactForm.reset();
   });
 });
+
+
+// Handle modal trigger
+// Get references to the modal and close button
+const modal = document.getElementById("myModal");
+const closeModal = document.getElementById("closeModal");
+
+// Get references to your "Add Contacts" button
+const addContactsButton = document.getElementById("addContactsButton");
+
+// Function to open the modal
+function openModal() {
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModalFunction() {
+  modal.style.display = "none";
+}
+
+// Event listeners
+addContactsButton.addEventListener("click", openModal);
+closeModal.addEventListener("click", closeModalFunction);
