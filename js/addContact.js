@@ -1,4 +1,5 @@
-import userModel from '../js/login.js';
+import { userModel } from './login.js';
+
 document.addEventListener("DOMContentLoaded", function () {
   const addContactForm = document.getElementById("addContactForm");
   const resultDiv = document.getElementById("result-contact");

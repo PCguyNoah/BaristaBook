@@ -78,7 +78,8 @@ document.addEventListener("DOMContentLoaded", function () {
           });
   });
 });
-export default userModel;
+// Export the userModel object
+export { userModel };
 
 
 
