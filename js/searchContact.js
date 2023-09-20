@@ -1,3 +1,5 @@
+var searchQuery = "";
+
 export default function fetchContacts() {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/SearchContacts.php";
 
@@ -37,6 +39,17 @@ export default function fetchContacts() {
       console.error("Error fetching contacts:", error);
     });
 }
+
+// filter search 
+const searchInput = document.getElementById("searchInput");
+const filteredContactsContainer = document.getElementById("filteredContacts");
+
+searchInput.addEventListener("keyup", function () {
+  searchQuery = searchInput.value.trim(); // Get the user's input
+
+  // Call the API with the search query
+  fetchContacts(searchQuery);
+});
 
 // Function to render contacts in HTML
 function renderContacts(contacts) {

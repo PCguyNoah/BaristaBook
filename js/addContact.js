@@ -72,8 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .then(data => {
               console.log(data);
-              resultDiv.innerHTML = "Contact added successfully: "
+              // Refresh table and close modal on submit
               fetchContacts();
+              closeModalFunction();
           })
           .catch(error => {
               resultDiv.innerHTML = "Error: " + error.message;
