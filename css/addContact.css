@@ -11,6 +11,7 @@
 }
 
 .modal-content {
+  max-width: 700px;
   background-color: #fff;
   margin: 10% auto;
   padding: 20px;
@@ -46,4 +47,12 @@
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   z-index: 1;
+}
+
+.modal-title {
+  color: black;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
 }

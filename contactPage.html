@@ -13,6 +13,7 @@
 <body>
     <div id="myModal" class="modal">
       <div class="modal-content">
+        <div class="modal-title">Add a new Contact</div>
         <span class="close" id="closeModal">&times;</span>
           <form id="addContactForm">
             <div class="input-box">
@@ -22,12 +23,12 @@
     
             <div class="input-box">
               <label for="email">Email:</label>
-              <input tabindex="0" type="text" id="email" name="email" required>
+              <input tabindex="0" type="text" id="email" name="email">
             </div>
     
             <div class="input-box">
               <label for="phonenumber">Phone Number:</label>
-              <input tabindex="0" type="text" id="phone" name="phonenumber" required>
+              <input tabindex="0" type="text" id="phone" name="phonenumber">
             </div>
             <div class="button-box">
               <button tabindex="0" class="btn2" type="submit">submit</button>
@@ -85,25 +86,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>555-123-4567</td>
-                    <td>johndoe@example.com</td>
-                    <td>
-                        <button onclick="editRow(this)">Edit</button>
-                        <button onclick="deleteRow(this)">Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jamison Smithsonion</td>
-                    <td>555-987-6543</td>
-                    <td>janesmith@example.com</td>
-                    <td>
-                        <button onclick="editRow(this)">Edit</button>
-                        <button onclick="deleteRow(this)">Delete</button>
-                    </td>
-                </tr>
-                <!-- Add more rows as needed -->
+              <div id="contactList">
+                <!-- Contacts will be displayed here -->
+              </div>
             </tbody>
         </table>
       
@@ -111,6 +96,7 @@
       </div>
     <script src="js/login.js"></script>
     <script src="js/addContact.js"></script>
+    <script src="js/searchContact.js"></script>
 </body>
 
 </html>
