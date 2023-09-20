@@ -42,26 +42,40 @@ function fetchContacts() {
 function renderContacts(contacts) {
   const contactListContainer = document.getElementById("contactList");
 
-  // Clear the container before rendering
-  contactListContainer.innerHTML = "";
+  // Create a table element
+  const table = document.createElement("table");
 
-  // Iterate through the contacts and create HTML elements
+  // Create the table header row
+  const tableHeader = document.createElement("tr");
+  tableHeader.innerHTML = `
+    <th>Name</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Action</th>
+  `;
+
+  table.appendChild(tableHeader);
+
+  // Iterate through the contacts and create table rows
   contacts.forEach(contact => {
-    const contactElement = document.createElement("div");
-    contactElement.innerHTML = `
-      <tr>
-        <td>${contact.name}</td>
-        <td>${contact.phone}</td>
-        <td>${contact.email}</td>
-        <td>
-            <button onclick="editRow(this)">Edit</button>
-            <button onclick="deleteRow(this)">Delete</button>
-        </td>
-      </tr>
+    const row = document.createElement("tr");
+    row.innerHTML = `
+      <td>${contact.name}</td>
+      <td>${contact.phone}</td>
+      <td>${contact.email}</td>
+      <td>
+        <button onclick="editRow(this)">Edit</button>
+        <button onclick="deleteRow(this)">Delete</button>
+      </td>
     `;
-    contactListContainer.appendChild(contactElement);
+    table.appendChild(row);
   });
+
+  // Clear the container and append the table
+  contactListContainer.innerHTML = "";
+  contactListContainer.appendChild(table);
 }
+
 
 // Call the fetchContacts function when the page loads
 window.addEventListener("load", fetchContacts);
