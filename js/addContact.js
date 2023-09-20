@@ -1,3 +1,5 @@
+ // Import the default export
+import fetchContacts from './searchContact.js';
  // populate userModel with saved session data
  const userModel = {
   id: sessionStorage.getItem('id'),
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(data => {
               console.log(data);
               resultDiv.innerHTML = "Contact added successfully: "
+              fetchContacts();
           })
           .catch(error => {
               resultDiv.innerHTML = "Error: " + error.message;

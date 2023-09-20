@@ -1,4 +1,4 @@
-function fetchContacts() {
+export default function fetchContacts() {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/SearchContacts.php";
 
   // Define the request data
