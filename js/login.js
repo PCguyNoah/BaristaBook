@@ -55,14 +55,13 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              // set user model
-              userModel = {
-                id: data.id,
-                firstName: data.firstName,
-                lastName: data.lastName,
-                phone: data.phone,
-                email: data.email
-              }
+              // set user model data
+              userModel.id = data.id;
+              userModel.firstName = data.firstName;
+              userModel.lastName = data.lastName;
+              userModel.phone = data.phone;
+              userModel.email = data.email;
+              
               console.log(userModel);
               // store model
               mydata = data
