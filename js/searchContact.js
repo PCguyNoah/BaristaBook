@@ -27,8 +27,11 @@ function fetchContacts() {
     })
     .then(data => {
       console.log(data);
-      // Data is an array of contacts
-      renderContacts(data);
+      if (Array.isArray(data.results)) {
+        renderContacts(data.results);
+      } else {
+        console.error("API response does not contain an array of contacts:", data);
+      }
     })
     .catch(error => {
       console.error("Error fetching contacts:", error);
@@ -46,9 +49,15 @@ function renderContacts(contacts) {
   contacts.forEach(contact => {
     const contactElement = document.createElement("div");
     contactElement.innerHTML = `
-      <p>Name: ${contact.name}</p>
-      <p>Phone: ${contact.phone}</p>
-      <p>Email: ${contact.email}</p>
+      <tr>
+        <td>${contact.name}</td>
+        <td>${contact.phone}</td>
+        <td>${contact.email}</td>
+        <td>
+            <button onclick="editRow(this)">Edit</button>
+            <button onclick="deleteRow(this)">Delete</button>
+        </td>
+      </tr>
     `;
     contactListContainer.appendChild(contactElement);
   });

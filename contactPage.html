@@ -13,7 +13,6 @@
 <body>
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <div class="modal-title">Add a new Contact</div>
         <span class="close" id="closeModal">&times;</span>
           <form id="addContactForm">
             <div class="input-box">
@@ -23,12 +22,12 @@
     
             <div class="input-box">
               <label for="email">Email:</label>
-              <input tabindex="0" type="text" id="email" name="email">
+              <input tabindex="0" type="text" id="email" name="email" required>
             </div>
     
             <div class="input-box">
               <label for="phonenumber">Phone Number:</label>
-              <input tabindex="0" type="text" id="phone" name="phonenumber">
+              <input tabindex="0" type="text" id="phone" name="phonenumber" required>
             </div>
             <div class="button-box">
               <button tabindex="0" class="btn2" type="submit">submit</button>
@@ -96,7 +95,6 @@
       </div>
     <script src="js/login.js"></script>
     <script src="js/addContact.js"></script>
-    <script src="js/searchContact.js"></script>
 </body>
 
 </html>
