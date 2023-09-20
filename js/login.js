@@ -46,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              console.log(userModel);
               // store model
               mydata = data
               console.log(mydata);
