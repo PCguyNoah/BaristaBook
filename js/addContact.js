@@ -1,4 +1,3 @@
-import userModel from '/login.js';
 document.addEventListener("DOMContentLoaded", function () {
   const addContactForm = document.getElementById("addContactForm");
   const resultDiv = document.getElementById("result-contact");
@@ -12,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const email = document.getElementById("email").value;
 
       // set user id
-      const userId = userModel.id;
+      console.log(window.userModel);
+      const userId = window.userModel.id;
 
       // Create the contact data object
       const contactData = {

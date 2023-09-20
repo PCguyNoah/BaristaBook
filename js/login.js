@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 phone: data.phone,
                 email: data.email
               }
+              window.userModel = userModel;
               console.log(userModel);
               // store model
               mydata = data
@@ -78,8 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
           });
   });
 });
-// Export the userModel object
-export default userModel;
 
 
 
