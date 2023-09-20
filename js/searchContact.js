@@ -1,4 +1,7 @@
+// filter search params
 var searchQuery = "";
+const searchInput = document.getElementById("searchInput");
+const filteredContactsContainer = document.getElementById("filteredContacts");
 
 export default function fetchContacts() {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/SearchContacts.php";
@@ -39,11 +42,7 @@ export default function fetchContacts() {
       console.error("Error fetching contacts:", error);
     });
 }
-
-// filter search 
-const searchInput = document.getElementById("searchInput");
-const filteredContactsContainer = document.getElementById("filteredContacts");
-
+// This function handles user search
 searchInput.addEventListener("keyup", function () {
   searchQuery = searchInput.value.trim(); // Get the user's input
   console.log(searchQuery);
