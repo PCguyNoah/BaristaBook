@@ -11,6 +11,15 @@ function register() {
   location.href = 'register.html';
 }
 
+ // create user model
+ const userModel = {
+  id: null,
+  firstName: null,
+  lastName: null,
+  phone: null,
+  email: null,
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
   const resultDiv = document.getElementById("result");
@@ -46,15 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              // create user model
-              const userModel = {
+              // set user model
+              userModel = {
                 id: data.id,
                 firstName: data.firstName,
                 lastName: data.lastName,
                 phone: data.phone,
                 email: data.email
               }
-              window.userModel = userModel;
               console.log(userModel);
               // store model
               mydata = data
@@ -95,8 +103,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // set user id
       console.log("my model:");
-      console.log(window.userModel);
-      const userId = window.userModel.id;
+      console.log(userModel);
+      const userId = userModel.id;
 
       // Create the contact data object
       const contactData = {
