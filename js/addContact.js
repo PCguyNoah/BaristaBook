@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const email = document.getElementById("email").value;
 
       // set user id
+      console.log("my model:");
       console.log(window.userModel);
       const userId = window.userModel.id;
 
