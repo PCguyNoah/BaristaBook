@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
           email: email,
           userId: userId
       };
+      console.log(contactData);
 
       // Define the API endpoint URL for adding a contact
       const apiUrl = "http://baristabook.xyz/LAMPAPI/AddContacts.php";
@@ -54,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              console.log(response);
+              console.log(data);
               resultDiv.innerHTML = "Contact added successfully: " + JSON.stringify(data);
           })
           .catch(error => {
