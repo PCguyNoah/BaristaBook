@@ -8,13 +8,27 @@
 }
 // add contact
 document.addEventListener("DOMContentLoaded", function () {
+  // Set 
   const addContactForm = document.getElementById("addContactForm");
   const resultDiv = document.getElementById("result-contact");
+  
+  // Home page strings:
+  var titleCard = 'Welcome Back, ' + userModel.firstName + '!';
+  var nameString = 'Name: ' + userModel.firstName + ' ' + userModel.lastName;
+  var phoneString = 'Phone: ' + userModel.phone;
+  var emailString = 'E-mail' + userModel.email;
 
+  // Set dom variables
+  document.getElementById("title-card").innerHTML = titleCard;
+  document.getElementById("name-string").innerHTML = nameString;
+  document.getElementById("phone-string").innerHTML = phoneString;
+  document.getElementById("email-string").innerHTML = emailString;
+
+  // API call for adding contacts
   addContactForm.addEventListener("submit", function (event) {
       event.preventDefault();
 
-      // Retrieve input values from the form
+      // Get contact values
       const name = document.getElementById("name").value;
       const phone = document.getElementById("phone").value;
       const email = document.getElementById("email").value;
