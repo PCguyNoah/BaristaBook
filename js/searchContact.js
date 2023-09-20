@@ -36,12 +36,11 @@ export default function fetchContacts() {
       if (Array.isArray(data.results)) {
         renderContacts(data.results);
       } else {
-        console.error("API response does not contain an array of contacts:", data);
+        resultDiv.innerHTML = data.error;
       }
     })
     .catch(error => {
       console.error("Error fetching contacts:", error);
-      resultDiv.innerHTML = error.message;
     });
 }
 // This function handles user search
