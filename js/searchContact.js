@@ -1,18 +1,9 @@
-// populate userModel with saved session data
-const userModel = {
-  id: sessionStorage.getItem('id'),
-  firstName: sessionStorage.getItem('firstName'),
-  lastName: sessionStorage.getItem('lastName'),
-  phone: sessionStorage.getItem('phone',),
-  email: sessionStorage.getItem('email'),
-}
-
 function fetchContacts() {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/SearchContacts.php";
 
   // Define the request data
   const requestData = {
-    userId: userModel.id,
+    userId: sessionStorage.getItem('id'),
     search: ""
   };
 
