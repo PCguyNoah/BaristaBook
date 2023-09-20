@@ -35,6 +35,7 @@ export default function fetchContacts() {
       console.log(data);
       if (Array.isArray(data.results)) {
         renderContacts(data.results);
+        resultDiv.innerHTML = data.error
       } else {
         resultDiv.innerHTML = data.error;
       }
