@@ -5,6 +5,7 @@ const filteredContactsContainer = document.getElementById("filteredContacts");
 
 export default function fetchContacts() {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/SearchContacts.php";
+  const resultDiv = document.getElementById("result-search");
 
   // Define the request data
   const requestData = {
@@ -40,6 +41,7 @@ export default function fetchContacts() {
     })
     .catch(error => {
       console.error("Error fetching contacts:", error);
+      resultDiv.innerHTML = error.message;
     });
 }
 // This function handles user search
