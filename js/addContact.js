@@ -1,4 +1,11 @@
-import userModel from "./login.js"
+ // create user model
+ const userModel = {
+  id: sessionStorage.getItem('id'),
+  firstName: sessionStorage.getItem('firstName'),
+  lastName: sessionStorage.getItem('lastName'),
+  phone: sessionStorage.getItem('phone',),
+  email: sessionStorage.getItem('email'),
+}
 // add contact
 document.addEventListener("DOMContentLoaded", function () {
   const addContactForm = document.getElementById("addContactForm");

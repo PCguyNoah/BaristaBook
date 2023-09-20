@@ -11,15 +11,6 @@ function register() {
   location.href = 'register.html';
 }
 
- // create user model
- const userModel = {
-  id: null,
-  firstName: null,
-  lastName: null,
-  phone: null,
-  email: null,
-}
-
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
   const resultDiv = document.getElementById("result");
@@ -55,13 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
               }
           })
           .then(data => {
-              // set user model data
-              userModel.id = data.id;
-              userModel.firstName = data.firstName;
-              userModel.lastName = data.lastName;
-              userModel.phone = data.phone;
-              userModel.email = data.email;
-              
               console.log(userModel);
               // store model
               mydata = data
@@ -72,6 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("login succesful");
                 resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
                 sessionStorage.setItem('UserID',login);
+                sessionStorage.setItem('id',data.id);
+                sessionStorage.setItem('firstName', data.firstName);
+                sessionStorage.setItem('lastName', data.lastName);
+                sessionStorage.setItem('phone', data.phone);
+                sessionStorage.setItem('email', data.email);
                 // move to contact page
                 location.href = 'contactPage.html'; 
               } else {
@@ -86,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
           });
   });
 });
-
-export default userModel;
 
 
 
