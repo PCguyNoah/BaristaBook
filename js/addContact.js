@@ -1,4 +1,4 @@
- // create user model
+ // populate userModel with saved session data
  const userModel = {
   id: sessionStorage.getItem('id'),
   firstName: sessionStorage.getItem('firstName'),
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
           })
           .then(data => {
               console.log(data);
-              resultDiv.innerHTML = "Contact added successfully: " + JSON.stringify(data);
+              resultDiv.innerHTML = "Contact added successfully: "
           })
           .catch(error => {
               resultDiv.innerHTML = "Error: " + error.message;
