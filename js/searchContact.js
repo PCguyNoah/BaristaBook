@@ -6,7 +6,7 @@ export default function fetchContacts() {
   // Define the request data
   const requestData = {
     userId: sessionStorage.getItem('id'),
-    search: ""
+    search: searchQuery
   };
 
   // Define the request options
@@ -46,7 +46,7 @@ const filteredContactsContainer = document.getElementById("filteredContacts");
 
 searchInput.addEventListener("keyup", function () {
   searchQuery = searchInput.value.trim(); // Get the user's input
-
+  console.log(searchQuery);
   // Call the API with the search query
   fetchContacts(searchQuery);
 });
