@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var titleCard = 'Welcome Back, ' + userModel.firstName + '!';
   var nameString = 'Name: ' + userModel.firstName + ' ' + userModel.lastName;
   var phoneString = 'Phone: ' + userModel.phone;
-  var emailString = 'E-mail' + userModel.email;
+  var emailString = 'E-mail: ' + userModel.email;
 
   // Set dom variables
   document.getElementById("title-card").innerHTML = titleCard;

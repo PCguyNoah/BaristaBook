@@ -2,7 +2,7 @@
 body
 {
   position: relative;
-  background-image: url('../images/homescreen.jpg');
+  background-image: url('../images/contactBackground.jpg');
   background-size: cover;
   background-repeat: no-repeat; /* Prevent the image from repeating */
 }
@@ -51,4 +51,21 @@ header {
 
 .btn:hover {
   background-color: #42953e;
+}
+
+.message-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-message {
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: 700;
+  font-size: 10rem;
+  display: flex;
+  
+  background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
 }
