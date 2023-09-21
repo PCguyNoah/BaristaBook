@@ -109,7 +109,7 @@ header {
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
-label[for="search"] {
+  .search-label {
     /* Your styles here */
     font-weight: bold; /* Example: Make the label text bold */
     color: black; /* Example: Change the label text color */
@@ -118,7 +118,7 @@ label[for="search"] {
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   }
 
-  #search {
+  .search-box {
     width: 600px; /* Set the width of the input field */
     padding: 10px; /* Add padding for better appearance */
     border: 1px solid #ccc; /* Add a border */

@@ -56,3 +56,11 @@
   font-size: 25px;
   text-align: center;
 }
+
+.search-error-text {
+  color: red;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+}
