@@ -123,6 +123,6 @@ addContactsButton.addEventListener("click", openModal);
 deleteContactButton.addEventListener("click", openDeleteModal);
 closeModal.addEventListener("click", closeModalFunction);
 closeDeleteModal.addEventListener("click", closeDeleteModalFunc);
-viewAllBtn.addEventListener("click", fetchContacts());
+viewAllBtn.addEventListener("click", fetchContacts);
 
 
