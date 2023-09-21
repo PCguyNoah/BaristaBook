@@ -97,7 +97,6 @@ const addContactsButton = document.getElementById("addContactsButton");
 // Get references to your "Delete" button - NEEDS TO BE DONE 
 const deleteContactButton = document.getElementById("deleteContactsButton");
 const closeDeleteModal = document.getElementById("closeDeleteModal");
-const viewAllBtn = document.getElementById("viewAllBtn");
 
 // Function to open the modal
 function openModal() {
@@ -123,8 +122,12 @@ addContactsButton.addEventListener("click", openModal);
 deleteContactButton.addEventListener("click", openDeleteModal);
 closeModal.addEventListener("click", closeModalFunction);
 closeDeleteModal.addEventListener("click", closeDeleteModalFunc);
-viewAllBtn.addEventListener("click", function() {
-  console.log("Click registered!");
+
+const viewAllButton = document.getElementById("viewAllButton");
+
+// Add a click event listener to the "View All" button
+viewAllButton.addEventListener("click", function () {
+  console.log("Button clicked!");
   fetchContacts();
 });
 
