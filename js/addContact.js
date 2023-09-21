@@ -119,7 +119,7 @@ function closeDeleteModalFunc() {
 
 // Event listeners
 addContactsButton.addEventListener("click", openModal);
-deleteContactButton.addEventListener("click", openDeleteModal);
+//deleteContactButton.addEventListener("click", openDeleteModal);
 closeModal.addEventListener("click", closeModalFunction);
 closeDeleteModal.addEventListener("click", closeDeleteModalFunc);
 
