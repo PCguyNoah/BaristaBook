@@ -73,16 +73,18 @@ function renderContacts(contacts) {
   // Iterate through the contacts and create table rows
   contacts.forEach(contact => {
     const row = document.createElement("tr");
-    row.innerHTML = `
+      row.innerHTML = `
       <td>${contact.name}</td>
       <td>${contact.phone}</td>
       <td>${contact.email}</td>
       <td>
-        <button>Edit</button>
-        <button id="deleteContactButton">Delete</button>
+          <button onclick="editRow(this)">Edit</button>
+          <button onclick="openDeleteModal(${contact.id})">Delete</button>
       </td>
     `;
     table.appendChild(row);
+    
+
   });
 
   // Clear the container and append the table

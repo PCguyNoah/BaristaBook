@@ -175,4 +175,8 @@ table {
   
   /* You can add more specific styles or adjust these as needed */
   
-  
+  /* Delete modal styles */
+.delete-modal {
+  display: none;
+  /* Add styling for the modal */
+}
