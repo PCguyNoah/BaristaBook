@@ -87,8 +87,12 @@ function renderContacts(contacts) {
   // Clear the container and append the table
   contactListContainer.innerHTML = "";
   contactListContainer.appendChild(table);
+  deleteContactButton.addEventListener("click", openDeleteModal);
 }
 
+function openDeleteModal() {
+  deleteModal.style.display = "block";
+}
 
 // Call the fetchContacts function when the page loads
 window.addEventListener("load", fetchContacts);
