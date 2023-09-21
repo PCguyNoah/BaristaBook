@@ -22,15 +22,10 @@ header {
     padding: 52px;
 }
 
-label {
-  font-size: 18px;
-}
-
-
 /* Form container */
 .form {
     width: 375px;
-    height: 250px;
+    height: 275px;
     margin: 0 auto;
     background: #fff;
     padding: 20px;
@@ -52,7 +47,7 @@ label {
 }
 
 /* Login / Register Buttons */
-.btn {
+.btn3 {
     /* Your CSS styles for the button go here */
     background-color: black;
     color: white;
@@ -62,13 +57,16 @@ label {
     border-radius: 5px;
     cursor: pointer;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 150;
+    font-weight: 200;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
-.btn:hover {
-  background-color: #42953e;
+.btn3:hover {
+  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: black;
   transition: background-color 0.3s;
 }
 
@@ -85,36 +83,41 @@ label {
     font-weight: 200;
     margin-bottom: 10px;
     margin-top: 16px;
-    font-size: 28px;
+    font-size: 30px;
     position: absolute;
     top: 10px;
     left: 30px;
   }
   
-  
   .btn1:hover {
-    background-color: #42953e;
-    transition: background-color 0.3s;
+    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: white;
+    -webkit-background-clip: border-box;
+    color: transparent; /* Hide text color on hover */
+    border-color: transparent;
   }
 
   /* Sign on button */
   .btn2 {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
-    border: none;
+    border-style: double;
+    border-color: black;
     border-radius: 5px;
     cursor: pointer;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 150;
+    font-weight: 225;
     margin-bottom: 10px;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 22px;
   }
   
   .btn2:hover {
-    background-color: #42953e;
+    background-color: #cf23cf;
+    color: white; /* Hide text color on hover */
+    border-color: transparent;
     transition: background-color 0.3s;
   }
   
@@ -129,8 +132,9 @@ label {
       text-align: left; /* Align label text to the left */
       margin-right: -10px; /* Add some spacing between label and input */
       font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-      font-weight: 100;
+      font-weight: 200;
       color: black;
+      font-size: 18px;
   }
   
   .input-box input {
