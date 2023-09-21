@@ -8,7 +8,7 @@ export default function openDeleteModal(contactId) {
 }
 
 // Function to close the delete modal
-export default function closeDeleteModal() {
+function closeDeleteModal() {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "none";
 }
