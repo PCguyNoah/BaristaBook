@@ -1,7 +1,3 @@
-import openDeleteModal from './deleteContact.js';
-import closeDeleteModal from './deleteContact.js';
-import confirmDelete from './deleteContact.js';
-
 // filter search params
 var searchQuery = "";
 const searchInput = document.getElementById("searchInput");
