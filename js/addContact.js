@@ -115,6 +115,6 @@ function closeModalFunction() {
 addContactsButton.addEventListener("click", openModal);
 deleteContactButton.addEventListener("click", openDeleteModal);
 closeModal.addEventListener("click", closeModalFunction);
-
+closeDeleteModal.addEventListener("click", closeModalFunction);
 
 

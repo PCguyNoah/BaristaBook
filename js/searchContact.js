@@ -59,7 +59,7 @@ function renderContacts(contacts) {
   const table = document.createElement("table");
 
   // Create the table header row
-  const tableHeader = document.getElementById("contactList");
+  const tableHeader = document.createElement("tr");
   tableHeader.innerHTML = `
     <th>Name</th>
     <th>Phone</th>
@@ -77,8 +77,8 @@ function renderContacts(contacts) {
       <td>${contact.phone}</td>
       <td>${contact.email}</td>
       <td>
-        <button onclick="editRow(this)">Edit</button>
-        <button onclick="deleteRow(this)">Delete</button>
+        <button>Edit</button>
+        <button id="deleteContactButton">Delete</button>
       </td>
     `;
     table.appendChild(row);
