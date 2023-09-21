@@ -1,20 +1,20 @@
 import fetchContacts from './searchContact.js';
 let currentContactId; 
 
-function openDeleteModal(contactId) {
+export default function openDeleteModal(contactId) {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "block";
   currentContactId = contactId;
 }
 
 // Function to close the delete modal
-function closeDeleteModal() {
+export default function closeDeleteModal() {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "none";
 }
 
 // Function to confirm the delete action
-function confirmDelete() {
+export default function confirmDelete() {
   if (currentContactId !== undefined) {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/DeleteContacts.php";
 
