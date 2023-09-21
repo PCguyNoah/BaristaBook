@@ -57,6 +57,7 @@ function renderContacts(contacts) {
   const contactListContainer = document.getElementById("contactList");
   // Create a table element
   const table = document.createElement("table");
+  table.className = 'my-table';
 
   // Create the table header row
   const tableHeader = document.createElement("tr");
