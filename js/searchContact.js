@@ -93,6 +93,3 @@ function renderContacts(contacts) {
 function openDeleteModal() {
   deleteModal.style.display = "block";
 }
-
-// Call the fetchContacts function when the page loads
-window.addEventListener("load", fetchContacts);
