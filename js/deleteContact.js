@@ -1,3 +1,4 @@
+/*
 import fetchContacts from './searchContact.js';
 let currentContactId; 
 
@@ -50,3 +51,4 @@ function confirmDelete() {
   });
   }
 }
+*/
