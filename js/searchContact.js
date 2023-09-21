@@ -55,12 +55,11 @@ searchInput.addEventListener("keyup", function () {
 // Function to render contacts in HTML
 function renderContacts(contacts) {
   const contactListContainer = document.getElementById("contactList");
-
   // Create a table element
   const table = document.createElement("table");
 
   // Create the table header row
-  const tableHeader = document.createElement("tr");
+  const tableHeader = document.getElementById("contactList");
   tableHeader.innerHTML = `
     <th>Name</th>
     <th>Phone</th>

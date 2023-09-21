@@ -163,7 +163,14 @@ table {
   
   /* Style the action buttons on hover */
   button:hover {
+    transition: background-color 0.3s;
     background-color: #0056b3;
+  }
+
+  .view-all {
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   /* You can add more specific styles or adjust these as needed */

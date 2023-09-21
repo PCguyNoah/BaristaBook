@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(data => {
               console.log(data);
               // Refresh table and close modal on submit
-              fetchContacts();
+              //fetchContacts();
               closeModalFunction();
           })
           .catch(error => {
