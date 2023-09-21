@@ -88,9 +88,4 @@ function renderContacts(contacts) {
   // Clear the container and append the table
   contactListContainer.innerHTML = "";
   contactListContainer.appendChild(table);
-  deleteContactButton.addEventListener("click", openDeleteModal);
-}
-
-function openDeleteModal() {
-  deleteModal.style.display = "block";
 }
