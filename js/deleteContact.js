@@ -1,8 +1,7 @@
-/*
-import fetchContacts from './searchContact.js';
+import fetchContacts  from './searchContact.js';
 let currentContactId; 
 
-function openDeleteModal(contactId) {
+export default function openDeleteModal(contactId) {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "block";
   currentContactId = contactId;
@@ -51,4 +50,3 @@ function confirmDelete() {
   });
   }
 }
-*/
