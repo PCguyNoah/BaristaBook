@@ -78,7 +78,7 @@ function renderContacts(contacts) {
       <td>${contact.phone}</td>
       <td>${contact.email}</td>
       <td>
-          <button onclick="editRow(this)">Edit</button>
+          <button onclick="openEditModal(${contact.id})">Edit</button>
           <button onclick="openDeleteModal(${contact.id})">Delete</button>
       </td>
     `;

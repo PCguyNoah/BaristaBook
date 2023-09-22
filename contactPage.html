@@ -45,17 +45,53 @@
     </div>
 
     <!-- Delete contact modal -->
-    <div id="deleteModal" class="delete-modal">
+    <div id="deleteModal" class="delete-modal modal">
       <div class="modal-content">
-        <p>Are you sure you want to delete the contact?</p>
-        <button onclick="confirmDelete()">Yes</button>
-        <button onclick="closeDeleteModal()">No</button>
+        <span tabindex="0" class="close" onclick="closeDeleteModal()">&times;</span>
+        <div class="modal-title">Are you sure you want to delete this contact?</div>
+        <div class="center-buttons">
+          <button tabindex="0" class="delete-buttons" onclick="confirmDelete()">Yes</button>
+          <button tabindex="0" class="delete-buttons" onclick="closeDeleteModal()">No</button>
+        </div>
       </div>
     </div>
 
+
+    <!-- Edit contact modal-->
+    <div id="editModal" class="delete-modal modal">
+      <div class="modal-content">
+        <span tabindex="0" class="close" onclick="closeEditModal()">&times;</span>
+        <div class="modal-title">Edit Contact</div>
+
+        <form id="editContactForm">
+          <div class="input-box">
+            <label for="firstname">Name:</label>
+            <input tabindex="0" type="text" id="editName" name="firstname" required>
+          </div>
+  
+          <div class="input-box">
+            <label for="email">Email:</label>
+            <input tabindex="0" type="text" id="editEmail" name="email" required>
+          </div>
+  
+          <div class="input-box">
+            <label for="phonenumber">Phone Number:</label>
+            <input tabindex="0" type="text" id="editPhone" name="phonenumber" required>
+          </div>
+          <div class="error-text" id="result-edit-contact"></div>
+        </form>
+
+        <div class="center-buttons">
+          <button tabindex="0" class="delete-buttons" onclick="confirmDelete()">Confirm</button>
+          <button tabindex="0" class="delete-buttons" onclick="closeDeleteModal()">Cancel</button>
+        </div>
+      </div>
+    </div>
+    
+
     <header>
         <div class="button-box">
-          <button type="button" class="btn1" onclick="home();" id="homeButton">Home</button>
+          <button tabindex="0" type="button" class="btn1" onclick="home();" id="homeButton">Home</button>
         </div>
         <!--Need to update name with users name-->
         <div class="title">
@@ -90,6 +126,7 @@
               <div>
               </div>
           </div>
+          <button tabindex="0" onclick="openDeleteModal()">Delete</button>
           <div id="contactList">
 
           </div>      
@@ -97,7 +134,7 @@
 
         <div class="right-section">
           <div class="button-box">
-            <button type="button" class="btn btn-open" id="addContactsButton">Add Contact</button>
+            <button tabindex="0" type="button" class="btn btn-open" id="addContactsButton">Add Contact</button>
           </div>
         </div>
       </div>
