@@ -1,10 +1,10 @@
 import fetchContacts from './searchContact.js';
-let currentContactId; 
+let editContactId; 
 
 window.openEditModal = function(contactId) {
   const modal = document.getElementById("editModal");
   modal.style.display = "block";
-  currentContactId = contactId;
+  editContactId = contactId;
 }
  
 // Function to close the delete modal
@@ -15,7 +15,7 @@ window.closeEditModal = function() {
 
 // Function to confirm the delete action
 window.confirmEdit = function() {
-  if (currentContactId !== undefined) {
+  if (editContactId !== undefined) {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/editContacts.php";
   // Get contact values
   const newName = document.getElementById("editName").value;
@@ -23,7 +23,7 @@ window.confirmEdit = function() {
   const newEmail = document.getElementById("editEmail").value;
 
   const requestData = {
-    id: currentContactId,
+    id: editContactId,
     name: newName,
     phone: newPhone,
     email: newEmail,
