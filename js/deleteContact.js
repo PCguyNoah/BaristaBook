@@ -10,6 +10,7 @@ function openDeleteModal(contactId) {
   const deleteButtons = document.querySelectorAll(".delete-button");
   deleteButtons.forEach(button => {
       button.addEventListener("click", function () {
+          console.log("button clicked!");
           const contactId = button.getAttribute("data-contact-id");
           openDeleteModal(contactId);
       });
