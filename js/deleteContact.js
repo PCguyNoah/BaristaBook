@@ -7,18 +7,23 @@ function openDeleteModal(contactId) {
 }
 
   // Add event listeners to the "Delete" buttons
-  const deleteButtons = document.querySelectorAll(".delete-button");
-  console.log(deleteButtons);
-  deleteButtons.forEach(button => {
-      button.addEventListener("click", function () {
-          console.log("button clicked!");
-          const contactId = button.getAttribute("data-contact-id");
-          console.log(contactId);
-          openDeleteModal(contactId);
-      });
-  });
+  
+  const viewAll = document.getElementById('viewAllButton');
 
-
+  viewAll.addEventListener("click", function() {
+    console.log("Triggered event");
+    const deleteButtons = document.querySelectorAll(".delete-button");
+    console.log(deleteButtons);
+    deleteButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            console.log("button clicked!");
+            const contactId = button.getAttribute("data-contact-id");
+            console.log(contactId);
+            openDeleteModal(contactId);
+        });
+    });
+  })
+ 
 // Function to close the delete modal
 function closeDeleteModal() {
   const modal = document.getElementById("deleteModal");
