@@ -22,7 +22,7 @@ function confirmDelete() {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/DeleteContacts.php";
 
   const requestData = {
-    contactId: currentContactId,
+    id: currentContactId,
   };
 
   // Define the request options
