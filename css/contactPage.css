@@ -36,8 +36,8 @@ header {
     font-size: 32px;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-weight: 200;
-    margin-bottom: 20px;
     color: black;
+    margin-bottom: 10px;
 }
 
 .title h2 {
@@ -49,6 +49,7 @@ header {
     margin-top: 0px;
     background-color: #fff;
     border-radius: 25px;
+    padding: 7px 14px;
 }
 
 /* Home button */
@@ -62,21 +63,23 @@ header {
     cursor: pointer;
 }
 
-#addContactBtn {
-    background-color: white;
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    border: black;
-    border-style: double;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 22px;
+.button-box {
+  text-align: right;
 }
 
-#addContactBtn:hover {
-    background-color: #9fd26c;
+/* ADD CONTACT BUTTON */
+.btn-open {
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-style: double;
+  border-color: #251a10;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  font-weight: 200;
+  font-size: 24px;
 }
 
 /* Custom styles for section container */
@@ -87,15 +90,21 @@ header {
 
 /* Custom styles for left and right sections */
 .left-section {
-    flex: 1.25; /* 1/5 of the available space */
+    flex: 1; /* 1/5 of the available space */
     background-color: transparent; /* Example background color */
     padding: 20px; /* Add padding for spacing */
 }
 
+.center-section {
+  flex: 3.5;
+  background-color: white;
+  padding: 20px;
+}
+
 .right-section {
-    flex: 3.75; /* 4/5 of the available space */
-    background-color: #e0e0e0; /* Example background color */
-    padding: 20px; /* Add padding for spacing */
+    flex: 0.75; /* 4/5 of the available space */
+    background-color: transparent; /* Example background color */
+    margin-top: 20px; /* Add padding for spacing */
 }
 
 .user-info {
@@ -119,7 +128,7 @@ header {
   }
 
   .search-box {
-    width: 600px; /* Set the width of the input field */
+    width: 775px; /* Set the width of the input field */
     padding: 10px; /* Add padding for better appearance */
     border: 1px solid #ccc; /* Add a border */
     border-radius: 25px; /* Add rounded corners */
