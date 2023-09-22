@@ -9,7 +9,7 @@ window.openEditModal = function(contactId, name, phone, email) {
   editContactId = contactId;
   document.getElementById("editName").value = name;
   document.getElementById("editPhone").value = phone;
-  document.getElementById("editEmail").value = emaol;
+  document.getElementById("editEmail").value = email;
 }
  
 // Function to close the delete modal
