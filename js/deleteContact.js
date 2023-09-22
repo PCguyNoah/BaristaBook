@@ -1,10 +1,14 @@
 import fetchContacts  from './searchContact.js';
 let currentContactId; 
 
-export default function openDeleteModal(contactId) {
+function openDeleteModal(contactId) {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "block";
   currentContactId = contactId;
+}
+
+function printSomething() {
+  console.log('button click!');
 }
 
 // Function to close the delete modal
