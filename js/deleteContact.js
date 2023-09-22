@@ -1,32 +1,11 @@
+import fetchContacts from './searchContact.js';
 let currentContactId; 
 
-function openDeleteModal(contactId) {
+export default function openDeleteModal(contactId) {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "block";
   currentContactId = contactId;
 }
-
-  // Add event listeners to the "Delete" buttons
-  
-  const viewAll = document.getElementById('viewAllButton');
-
-  viewAll.addEventListener("click", function() {
-    console.log("Triggered event");
-    const deleteButtons = document.querySelectorAll(".delete-button");
-    console.log(deleteButtons);
-
-    document.addEventListener("DOMContentLoaded", function() {
-      deleteButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            console.log("button clicked!");
-            const contactId = button.getAttribute("data-contact-id");
-            console.log(contactId);
-            openDeleteModal(contactId);
-        });
-    });
-    })
-
-  })
  
 // Function to close the delete modal
 function closeDeleteModal() {

@@ -115,4 +115,3 @@ viewAllButton.addEventListener("click", function () {
   fetchContacts();
 });
 
-

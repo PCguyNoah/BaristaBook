@@ -79,12 +79,13 @@ function renderContacts(contacts) {
       <td>${contact.email}</td>
       <td>
           <button onclick="editRow(this)">Edit</button>
-          <button class="delete-button" data-contact-id="${contact.id}">Delete</button>
+          <button onclick="openDeleteModal(${contact.id})">Delete</button>
       </td>
     `;
     table.appendChild(row);
 
   });
+
   // Clear the container and append the table
   contactListContainer.innerHTML = "";
   contactListContainer.appendChild(table);
