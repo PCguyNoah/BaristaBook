@@ -1,3 +1,4 @@
+import fetchContacts from './searchContact.js';
 let currentContactId; 
 
 function openDeleteModal(contactId) {
@@ -45,7 +46,7 @@ function confirmDelete() {
   .then(data => {
     console.log(data);
     // After we delete, refresh the table 
-    //fetchContacts();
+    fetchContacts();
     closeDeleteModal();
   })
   .catch(error => {
