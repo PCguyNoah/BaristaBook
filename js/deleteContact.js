@@ -1,4 +1,3 @@
-import fetchContacts from './searchContact.js';
 let currentContactId; 
 
 function openDeleteModal(contactId) {
@@ -7,13 +6,15 @@ function openDeleteModal(contactId) {
   currentContactId = contactId;
 }
 
+  // Add event listeners to the "Delete" buttons
+  const deleteButtons = document.querySelectorAll(".delete-button");
+  deleteButtons.forEach(button => {
+      button.addEventListener("click", function () {
+          const contactId = button.getAttribute("data-contact-id");
+          openDeleteModal(contactId);
+      });
+  });
 
-function printSomething() {
-  console.log('button click!');
-  // No way this works
-  openDeleteModal();
-  confirmDelete();
-}
 
 // Function to close the delete modal
 function closeDeleteModal() {
