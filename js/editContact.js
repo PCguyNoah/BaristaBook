@@ -1,16 +1,25 @@
 import fetchContacts from './searchContact.js';
-let editContactId; 
+let editContactId;
 
-window.openEditModal = function(contactId) {
+window.openEditModal = function(contactId, name, phone, email) {
   const modal = document.getElementById("editModal");
   modal.style.display = "block";
+
+  // store old contact info:
   editContactId = contactId;
+  document.getElementById("editName").value = name;
+  document.getElementById("editPhone").value = phone;
+  document.getElementById("editEmail").value = emaol;
 }
  
 // Function to close the delete modal
 window.closeEditModal = function() {
+  const editContactForm = document.getElementById('addContactForm');
   const modal = document.getElementById("editModal");
   modal.style.display = "none";
+
+  // clear fields after we close the modal
+  editContactForm.reset();
 }
 
 // Function to confirm the delete action
