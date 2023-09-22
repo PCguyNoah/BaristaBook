@@ -12,9 +12,11 @@ function openDeleteModal(contactId) {
 
   viewAll.addEventListener("click", function() {
     console.log("Triggered event");
-    const deleteButtons = document.getElementsByClassName("delete-button");
+    const deleteButtons = document.querySelectorAll(".delete-button");
     console.log(deleteButtons);
-    deleteButtons.forEach(button => {
+
+    document.addEventListener("DOMContentLoaded", function() {
+      deleteButtons.forEach(button => {
         button.addEventListener("click", function () {
             console.log("button clicked!");
             const contactId = button.getAttribute("data-contact-id");
@@ -22,6 +24,8 @@ function openDeleteModal(contactId) {
             openDeleteModal(contactId);
         });
     });
+    })
+
   })
  
 // Function to close the delete modal
