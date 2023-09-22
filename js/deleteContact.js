@@ -12,7 +12,7 @@ function openDeleteModal(contactId) {
 
   viewAll.addEventListener("click", function() {
     console.log("Triggered event");
-    const deleteButtons = document.getElementsByClassNameAll("delete-button");
+    const deleteButtons = document.getElementsByClassName("delete-button");
     console.log(deleteButtons);
     deleteButtons.forEach(button => {
         button.addEventListener("click", function () {
