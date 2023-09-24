@@ -1,5 +1,6 @@
  // Import the default export
 import fetchContacts from './searchContact.js';
+let currentContactId;
  // populate userModel with saved session data
  const userModel = {
   id: sessionStorage.getItem('id'),
@@ -86,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(data => {
               console.log(data);
               // Refresh table and close modal on submit
-              openSuccessModal();
               closeModalFunction();
+              openSuccessModal();
           })
           .catch(error => {
               resultDiv.innerHTML = "Error: " + error.message;
