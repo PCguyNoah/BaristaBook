@@ -1,26 +1,25 @@
-/*
 import fetchContacts from './searchContact.js';
 let currentContactId; 
 
-function openDeleteModal(contactId) {
+window.openDeleteModal = function(contactId) {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "block";
   currentContactId = contactId;
 }
-
+ 
 // Function to close the delete modal
-function closeDeleteModal() {
+window.closeDeleteModal = function() {
   const modal = document.getElementById("deleteModal");
   modal.style.display = "none";
 }
 
 // Function to confirm the delete action
-function confirmDelete() {
+window.confirmDelete = function() {
   if (currentContactId !== undefined) {
   const apiUrl = "http://baristabook.xyz/LAMPAPI/DeleteContacts.php";
 
   const requestData = {
-    contactId: currentContactId,
+    id: currentContactId,
   };
 
   // Define the request options
@@ -51,4 +50,3 @@ function confirmDelete() {
   });
   }
 }
-*/

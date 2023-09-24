@@ -70,3 +70,18 @@
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   font-weight: 100;
 }
+
+.center-buttons{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.delete-buttons {
+  padding: 5px 70px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
