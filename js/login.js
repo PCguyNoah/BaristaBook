@@ -53,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
               // Check to make sure we didn't get an error message
               if (data.error === "") {
                 console.log("login succesful");
-                resultDiv.innerHTML = "Welcome back " + data.firstName + "!";
                 sessionStorage.setItem('UserID',login);
                 sessionStorage.setItem('id',data.id);
                 sessionStorage.setItem('firstName', data.firstName);
