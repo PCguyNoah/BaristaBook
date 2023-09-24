@@ -38,6 +38,9 @@ export default function fetchContacts() {
         resultDiv.innerHTML = data.error
       } else {
         resultDiv.innerHTML = data.error;
+        // show no list if we cant find a user 
+        let tempContain = document.getElementById("contactList");
+        tempContain.innerHTML = "";
       }
     })
     .catch(error => {
