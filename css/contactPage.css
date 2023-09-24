@@ -76,12 +76,13 @@ header {
 .btn-open {
   background-color: white;
   color: black;
-  padding: 2px 4px;
+  padding: 20px;
   text-decoration: none;
   border-style: double;
   border-color: #251a10;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   font-weight: 200;
   font-size: 24px;

@@ -40,7 +40,6 @@ header {
     /* Your CSS styles for the button go here */
     background-color: transparent;
     color: black;
-    padding: 10px 20px;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -48,6 +47,7 @@ header {
     font-size: 35px;
     font-weight: 180;
     transition: all 0.3s ease; 
+    white-space: nowrap;
 }
 
 .btn:hover {
