@@ -25,7 +25,8 @@ header {
 
 .title h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 30px;
+    padding-right: 30;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-weight: 150;
     text-align: center;
@@ -99,7 +100,6 @@ header {
   font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   font-weight: 200;
   font-size: 27px;
-  margin-left: 350px;
 }
 
 .button-box:last-child {
@@ -219,4 +219,22 @@ table {
 .delete-modal {
   display: none;
   /* Add styling for the modal */
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branded-header {
+  background-color: #251a10;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: none;
+  font-size: 45px;
+  font-weight: 500;
+  font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
