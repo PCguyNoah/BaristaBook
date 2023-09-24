@@ -2,14 +2,13 @@
 /* Global styles */
 body {
     position: relative;
-    background-image: url('../images/contactBackground.jpg');
+    background-image: url('../images/backgroundCoff.jpg');
     backdrop-filter: blur(10px);
     background-size: cover;
     background-repeat: no-repeat; /* Prevent the image from repeating */
     margin: 0;
     padding: 10px;
     background-color: white;
-    color: green;    
 }
 
 header {
@@ -47,7 +46,7 @@ header {
 }
 
 /* Login / Register Buttons */
-.btn3 {
+.login-button {
     /* Your CSS styles for the button go here */
     background-color: #251a10;
     color: white;
@@ -62,11 +61,10 @@ header {
     font-size: 22px;
 }
 
-.btn3:hover {
-  background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  color: black;
+.login-button:hover {
+  background-color: #5a8746;
+  -webkit-text-fill-color: #fff;
+  color: #fff;
   transition: background-color 0.3s;
 }
 
@@ -90,11 +88,12 @@ header {
   }
   
   .btn1:hover {
-    background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+    background: #5a8746;
     -webkit-text-fill-color: white;
     -webkit-background-clip: border-box;
     color: transparent; /* Hide text color on hover */
     border-color: transparent;
+    transition: background-color 0.3s;
   }
 
   /* Sign on button */
@@ -115,7 +114,7 @@ header {
   }
   
   .btn2:hover {
-    background-color: #cf23cf;
+    background-color: #5a8746;
     color: white; /* Hide text color on hover */
     border-color: transparent;
     transition: background-color 0.3s;

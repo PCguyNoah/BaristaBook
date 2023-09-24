@@ -8,6 +8,19 @@ import fetchContacts from './searchContact.js';
   phone: sessionStorage.getItem('phone',),
   email: sessionStorage.getItem('email'),
 }
+
+window.openSuccessModal = function(contactId) {
+  const modal = document.getElementById("successfulModal");
+  modal.style.display = "block";
+  currentContactId = contactId;
+}
+ 
+// Function to close the delete modal
+window.closeSuccessModal = function() {
+  const modal = document.getElementById("successfulModal");
+  modal.style.display = "none";
+}
+
 // add contact
 document.addEventListener("DOMContentLoaded", function () {
   // Set 
@@ -73,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
           .then(data => {
               console.log(data);
               // Refresh table and close modal on submit
-              fetchContacts();
+              openSuccessModal();
               closeModalFunction();
           })
           .catch(error => {
