@@ -39,6 +39,7 @@ export default function fetchContacts() {
       } else {
         resultDiv.innerHTML = data.error;
         // show no list if we cant find a user 
+        console.log("Clear table");
         let tempContain = document.getElementById("contactList");
         tempContain.innerHTML = "";
       }
